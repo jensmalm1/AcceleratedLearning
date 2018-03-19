@@ -29,13 +29,11 @@ namespace CheckPoin01.JensMalm
 
         static void WhatToDo(string[]triangles)                             //TODO: Tydligare metodnamn.
         {
-            foreach (string stringtriangle in triangles)
+            foreach (string triangle in triangles)
             {
-                int star = int.Parse(stringtriangle.Substring(1));
-                if (stringtriangle.Contains("A")==true)
-                
+                int star = int.Parse(triangle.Substring(1));
+                if (triangle.Contains("A")==true)     
                     APrintTriangles(star);
-                
                 else
                     BPrintTriangles(star);
             }
