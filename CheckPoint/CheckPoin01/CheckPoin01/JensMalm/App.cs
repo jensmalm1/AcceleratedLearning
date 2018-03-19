@@ -40,18 +40,18 @@ namespace CheckPoin01.JensMalm
             
         }
 
-        static void APrintTriangles(int star)
+        static void APrintTriangles(int height)
         {
-            for (int j = 1; j <= star; j++)
+            for (int j = 1; j <= height; j++)
             {
                 for (int i = 1; i <= j; i++)
                     Console.Write("*");
                 Console.WriteLine();
             }
         }
-        static void BPrintTriangles(int star)
+        static void BPrintTriangles(int height)
         {
-            for (int j = star; j >= 1; j--)
+            for (int j = height; j >= 1; j--)
             {
                 for (int i = 1; i <= j; i++)
                     Console.Write("*");
