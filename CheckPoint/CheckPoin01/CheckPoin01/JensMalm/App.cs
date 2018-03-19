@@ -11,7 +11,7 @@ namespace CheckPoin01.JensMalm
 
             string[] kommando = GetKommando();
 
-            WhatToDo(kommando);                                     
+            PrintTriangles(kommando);                                     
            
         }
 
@@ -27,7 +27,7 @@ namespace CheckPoin01.JensMalm
 
 
 
-        static void WhatToDo(string[] triangles)                             //TODO: Tydligare metodnamn.
+        static void PrintTriangles(string[] triangles)                             //TODO: Tydligare metodnamn.
         {
             foreach (string triangle in triangles)
             {
