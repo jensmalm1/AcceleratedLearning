@@ -11,7 +11,7 @@ namespace CheckPoin01.JensMalm
 
             string[] kommando = GetKommando();
 
-            WhatToDo(kommando);
+            WhatToDo(kommando);                                     
            
         }
 
@@ -22,12 +22,12 @@ namespace CheckPoin01.JensMalm
         {
             Console.WriteLine("Ange kommando ");
 
-            return Console.ReadLine().Split('-');
+            return Console.ReadLine().Split('-');                           //TODO: Lägg till parametern i Split-anropet StringSplitOptions.RemoveEmptyEntries
         }
 
 
 
-        static void WhatToDo(string[]triangles)
+        static void WhatToDo(string[]triangles)                             //TODO: Tydligare metodnamn.
         {
             foreach (string stringtriangle in triangles)
             {
